@@ -6,4 +6,3 @@ print(t)
 
 a = 3
 print(type(a))
-print(type(a))
