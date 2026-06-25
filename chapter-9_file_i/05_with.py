@@ -1,0 +1,10 @@
+f = open("file.txt")
+print(f.read())
+f.close()
+
+# the same can be written using with statment like
+#  with statement
+with open("file.txt") as f:
+  print(f.read())
+  
+  # you dont to exlicitly close the file
