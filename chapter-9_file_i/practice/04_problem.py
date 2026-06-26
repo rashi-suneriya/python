@@ -30,10 +30,25 @@ with open("file4.txt" , "w") as f:
   
 # Q6 write a program to mine a log file and find out wheather it contains 'python'.
   
-with open("log6.txt") as f:
-    content = f.read()
+# with open("log6.txt") as f:
+#     content = f.read()
     
-if("python" in content):
-  print("Yes py is present")
+# if("python" in content):
+#   print("Yes py is present")
+# else:
+#   print("No py is not present")      
+  
+  
+  # Q7 add line no. in Q6
+  
+  with open("log6.txt") as f:
+    lines = f.readlines()
+    
+lineno = 1
+for line in lines:    
+ if("python" in line):
+  print(f"Yes python is present. Line no: {lineno}")
+  break
+ lineno += 1
 else:
-  print("No py is not present")      
+  print("No python is not present")      
